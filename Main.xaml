@@ -81,7 +81,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic" sap:VirtualizedContainerService.HintSize="353.6,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+    <uix:NClick ActivateBefore="True" ClickType="Down" DisplayName="Clic" sap:VirtualizedContainerService.HintSize="353.6,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
       <uix:NClick.VerifyOptions>
         <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
           <uix:VerifyExecutionOptions.Retry>
