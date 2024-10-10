@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="699,690" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="699,690" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamf="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Filters;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umm="clr-namespace:UiPath.MicrosoftOffice365.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -182,7 +182,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="Diagrama Principal" sap:VirtualizedContainerService.HintSize="903,592" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="Diagrama Principal" sap:VirtualizedContainerService.HintSize="1092,524" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="validate_email" />
       <Variable x:TypeArguments="x:String" Name="user_ns" />
@@ -275,13 +275,13 @@
           <av:PointCollection x:Key="ConnectorLocation">660,245 660,295</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Extraer datos de una búsqueda guardada" sap:VirtualizedContainerService.HintSize="670,3390" sap2010:WorkflowViewState.IdRef="Sequence_46">
+      <Sequence DisplayName="Extraer datos de una búsqueda guardada" sap:VirtualizedContainerService.HintSize="676,3735" sap2010:WorkflowViewState.IdRef="Sequence_46">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Solicitar token de acceso" sap:VirtualizedContainerService.HintSize="608,3302" sap2010:WorkflowViewState.IdRef="Sequence_42">
+        <Sequence DisplayName="Solicitar token de acceso" sap:VirtualizedContainerService.HintSize="614,3647" sap2010:WorkflowViewState.IdRef="Sequence_42">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Default="https://5845631.app.netsuite.com/app/login/oauth2/authorize.nl?scope=restlets+rest_webservices&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fprovisioning_%2Fcallback&amp;state=cmVkaXJlY3RVcmw9aHR0cHM6Ly9jbG91ZC51aXBhdGguY29tL3NlcnZpd3JnZWxoYy9kZWZhdWx0dGVuYW50L3Byb3Zpc2lvbmluZ18vY2FsbGJhY2ssaWQ9ZGQ4MGE4YjctNWFmOC00MGNiLWIyOTUtNjhlNDJhOWMxYzQyLGVsZW1lbnRLZXk9ZGVzaWduLWRlc2lnbi1yZXN0bnMsZGVjb2RlQ29kZT1mYWxzZSxsYW5nPQ&amp;client_id=7541956c3922f3340f4c0a9f5fa0706bca0b5b2a3dccb93cb85bb294df9556e1" Name="url_code_token" />
           </Sequence.Variables>
@@ -291,13 +291,13 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Use Browser Edge: La aplicación solicita permiso para acceder a su cuenta SERVIMETERS S.A.S." sap:VirtualizedContainerService.HintSize="546,3191" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="0e5d326f-2a6d-46fb-b187-c35d9375820f" Version="V2">
+          <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Use Browser Edge: La aplicación solicita permiso para acceder a su cuenta SERVIMETERS S.A.S." sap:VirtualizedContainerService.HintSize="552,3536" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="0e5d326f-2a6d-46fb-b187-c35d9375820f" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,2951" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516,3296" sap2010:WorkflowViewState.IdRef="Sequence_43">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="url_response_token" />
                     <Variable x:TypeArguments="x:String" Name="code_st2_token" />
@@ -321,93 +321,119 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Auth-NS" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Servimeters/Contabilidad" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_4" Password="[pass_ns]" Username="[user_ns]" />
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Dirección de'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="0e5d326f-2a6d-46fb-b187-c35d9375820f" Text="[user_ns]" Version="V3">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.notion.so/Integraci-n-NetSuite-UiPath-con-RESTlet-11176a542af780d39adfe046022beb4a" CVScreenId="e0c323c2-2844-4366-a57a-95e7c3a51445" CvElementArea="279, 423, 357, 57" CvType="InputBox" DesignTimeRectangle="281, 425, 352, 53" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='text' class='' placeholder='Dirección de correo electrónico' aaname='Dirección de correo electrónico' /&gt;" Guid="0638e73e-b0f8-464b-a6f8-1fc80abeb674" InformativeScreenshot="b4b38387942de9d1c63030f79954bb4f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='NetSuite Login' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="e0c323c2-2844-4366-a57a-95e7c3a51445" CvElementArea="279, 423, 357, 57" CvType="InputBox" DesignTimeRectangle="281, 425, 236, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Dirección de correo electrónico' check:innerText='Dirección de correo electrónico' /&gt;" Guid="51b0d7fe-01e0-4c4a-8f8c-359fb88d9d93" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NTypeInto.Target>
-                    <uix:NTypeInto.VerifyOptions>
-                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                        <uix:VerifyExecutionTypeIntoOptions.Retry>
-                          <InArgument x:TypeArguments="x:Boolean" />
-                        </uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                          <InArgument x:TypeArguments="x:Double" />
-                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      </uix:VerifyExecutionTypeIntoOptions>
-                    </uix:NTypeInto.VerifyOptions>
-                  </uix:NTypeInto>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_9" IsPassword="True" ScopeIdentifier="0e5d326f-2a6d-46fb-b187-c35d9375820f" SecureText="[pass_ns]" Version="V3">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.notion.so/Integraci-n-NetSuite-UiPath-con-RESTlet-11176a542af780d39adfe046022beb4a" CVScreenId="5a19b808-5435-4ca9-827b-92118baa38fd" CvElementArea="279, 506, 355, 57" CvType="InputBox" DesignTimeRectangle="281, 508, 352, 53" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='' placeholder='Contraseña' aaname='Contraseña' /&gt;" Guid="1695e8d5-59ae-4716-af5f-2289ecc66783" InformativeScreenshot="a76e3b84b2a3f0594aa829e5b54cf4d6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='NetSuite Login' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="5a19b808-5435-4ca9-827b-92118baa38fd" CvElementArea="279, 506, 355, 57" CvType="InputBox" DesignTimeRectangle="281, 508, 95, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Contraseña' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Contraseña' tag='LABEL' type='' class='' check:innerText='Contraseña' /&gt;" Guid="915829b0-8fae-4fef-9d05-f299c5786993" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NTypeInto.Target>
-                    <uix:NTypeInto.VerifyOptions>
-                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                        <uix:VerifyExecutionTypeIntoOptions.Retry>
-                          <InArgument x:TypeArguments="x:Boolean" />
-                        </uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                          <InArgument x:TypeArguments="x:Double" />
-                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      </uix:VerifyExecutionTypeIntoOptions>
-                    </uix:NTypeInto.VerifyOptions>
-                  </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Iniciar sesión'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e5d326f-2a6d-46fb-b187-c35d9375820f" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://www.notion.so/Integraci-n-NetSuite-UiPath-con-RESTlet-11176a542af780d39adfe046022beb4a" CVScreenId="87707f99-85a9-4128-8dbd-44432b030406" CvElementArea="278, 649, 356, 55" CvTextArea="429, 670, 88, 13" CvTextArgument="Iniciar sesion" CvType="Button" DesignTimeRectangle="281, 651, 352, 52" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' type='submit' class='login-page-form-submit' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Iniciar sesión &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Iniciar sesión' /&gt;" Guid="d6edec15-36be-4bfd-bd41-5775a408739a" InformativeScreenshot="243e8ddb0b47ae98857a73be34f5d489.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='NetSuite Login' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="87707f99-85a9-4128-8dbd-44432b030406" CvElementArea="278, 649, 356, 55" CvTextArea="429, 670, 88, 13" CvTextArgument="Iniciar sesion" CvType="Button" DesignTimeRectangle="431, 667, 85, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='login-submit' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login-submit' tag='SPAN' type='' class='' aaname='Iniciar sesión' check:innerText='Iniciar sesión' /&gt;" Guid="f1137358-b36b-4331-a8f0-8ceb7b35d774" SearchSteps="FuzzySelector" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NClick.Target>
-                    <uix:NClick.VerifyOptions>
-                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                        <uix:VerifyExecutionOptions.Retry>
-                          <InArgument x:TypeArguments="x:Boolean" />
-                        </uix:VerifyExecutionOptions.Retry>
-                        <uix:VerifyExecutionOptions.Timeout>
-                          <InArgument x:TypeArguments="x:Double" />
-                        </uix:VerifyExecutionOptions.Timeout>
-                      </uix:VerifyExecutionOptions>
-                    </uix:NClick.VerifyOptions>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Continuar'" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e5d326f-2a6d-46fb-b187-c35d9375820f" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://5845631.app.netsuite.com/app/login/oauth2/authorize.nl?redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fprovisioning_%2Fcallback&amp;client_id=7541956c3922f3340f4c0a9f5fa0706bca0b5b2a3dccb93cb85bb294df9556e1&amp;response_type=code&amp;scope=restlets+rest_webservices&amp;state=cmVkaXJlY3RVcmw9aHR0cHM6Ly9jbG91ZC51aXBhdGguY29tL3NlcnZpd3JnZWxoYy9kZWZhdWx0dGVuYW50L3Byb3Zpc2lvbmluZ18vY2FsbGJhY2ssaWQ9ZGQ4MGE4YjctNWFmOC00MGNiLWIyOTUtNjhlNDJhOWMxYzQyLGVsZW1lbnRLZXk9ZGVzaWduLWRlc2lnbi1yZXN0bnMsZGVjb2RlQ29kZT1mYWxzZSxsYW5nPQ&amp;prompt=&amp;s=r&amp;nonce&amp;whence=" CVScreenId="faeb810c-3498-4025-97a5-49ff11bc4377" CvElementArea="631, 586, 118, 43" CvTextArea="658, 601, 65, 13" CvTextArgument="Continuar" CvType="Button" DesignTimeRectangle="633, 588, 115, 39" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='allow-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='allow-button' tag='BUTTON' type='' class='allow-button btn primary-btn' aaname=' Continuar&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Continuar' /&gt;" Guid="56595f72-e44c-426c-b40e-0458724525db" InformativeScreenshot="5b8c453c866e7180d59d4a7c6a8ca638.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='La aplicación solicita permiso para acceder a su cuenta SERVIMETERS S.A.S.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="faeb810c-3498-4025-97a5-49ff11bc4377" CvTextArea="521, 325, 558, 20" CvTextArgument="Robot facturacion tiene acceso a SERVIMETERS S.A.S" CvType="Text" DesignTimeRectangle="522, 323, 912, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='wrapper' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wrapper' tag='H1' type='' class='consent-header-main' aaname=' Robot facturación tiene acceso a SERVIMETERS S.A.S&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Robot facturación tiene acceso a SERVIMETERS S.A.S' /&gt;" Guid="fa8ec0ff-d2f7-4606-b48b-b35a05fb7ab1" SearchSteps="FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NClick.Target>
-                    <uix:NClick.VerifyOptions>
-                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                        <uix:VerifyExecutionOptions.Retry>
-                          <InArgument x:TypeArguments="x:Boolean" />
-                        </uix:VerifyExecutionOptions.Retry>
-                        <uix:VerifyExecutionOptions.Timeout>
-                          <InArgument x:TypeArguments="x:Double" />
-                        </uix:VerifyExecutionOptions.Timeout>
-                      </uix:VerifyExecutionOptions>
-                    </uix:NClick.VerifyOptions>
-                  </uix:NClick>
-                  <uix:NGetUrl CurrentUrl="[modified_url_token]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="450,119" sap2010:WorkflowViewState.IdRef="NGetUrl_3" Version="V3" />
-                  <Assign sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="454,1540" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <TryCatch.Try>
+                      <Sequence sap:VirtualizedContainerService.HintSize="416,1280" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Auth-NS" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Servimeters/Contabilidad" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_4" Password="[pass_ns]" Username="[user_ns]" />
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Dirección de'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="0e5d326f-2a6d-46fb-b187-c35d9375820f" Text="[user_ns]" Timeout="1" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.notion.so/Integraci-n-NetSuite-UiPath-con-RESTlet-11176a542af780d39adfe046022beb4a" CVScreenId="e0c323c2-2844-4366-a57a-95e7c3a51445" CvElementArea="279, 423, 357, 57" CvType="InputBox" DesignTimeRectangle="281, 425, 352, 53" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='text' class='' placeholder='Dirección de correo electrónico' aaname='Dirección de correo electrónico' /&gt;" Guid="0638e73e-b0f8-464b-a6f8-1fc80abeb674" InformativeScreenshot="b4b38387942de9d1c63030f79954bb4f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='NetSuite Login' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="e0c323c2-2844-4366-a57a-95e7c3a51445" CvElementArea="279, 423, 357, 57" CvType="InputBox" DesignTimeRectangle="281, 425, 236, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Dirección de correo electrónico' check:innerText='Dirección de correo electrónico' /&gt;" Guid="51b0d7fe-01e0-4c4a-8f8c-359fb88d9d93" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_9" IsPassword="True" ScopeIdentifier="0e5d326f-2a6d-46fb-b187-c35d9375820f" SecureText="[pass_ns]" Timeout="1" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.notion.so/Integraci-n-NetSuite-UiPath-con-RESTlet-11176a542af780d39adfe046022beb4a" CVScreenId="5a19b808-5435-4ca9-827b-92118baa38fd" CvElementArea="279, 506, 355, 57" CvType="InputBox" DesignTimeRectangle="281, 508, 352, 53" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='' placeholder='Contraseña' aaname='Contraseña' /&gt;" Guid="1695e8d5-59ae-4716-af5f-2289ecc66783" InformativeScreenshot="a76e3b84b2a3f0594aa829e5b54cf4d6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='NetSuite Login' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="5a19b808-5435-4ca9-827b-92118baa38fd" CvElementArea="279, 506, 355, 57" CvType="InputBox" DesignTimeRectangle="281, 508, 95, 36" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Contraseña' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Contraseña' tag='LABEL' type='' class='' check:innerText='Contraseña' /&gt;" Guid="915829b0-8fae-4fef-9d05-f299c5786993" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Iniciar sesión'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e5d326f-2a6d-46fb-b187-c35d9375820f" Timeout="1" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.notion.so/Integraci-n-NetSuite-UiPath-con-RESTlet-11176a542af780d39adfe046022beb4a" CVScreenId="87707f99-85a9-4128-8dbd-44432b030406" CvElementArea="278, 649, 356, 55" CvTextArea="429, 670, 88, 13" CvTextArgument="Iniciar sesion" CvType="Button" DesignTimeRectangle="281, 651, 352, 52" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' type='submit' class='login-page-form-submit' aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Iniciar sesión &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Iniciar sesión' /&gt;" Guid="d6edec15-36be-4bfd-bd41-5775a408739a" InformativeScreenshot="243e8ddb0b47ae98857a73be34f5d489.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='NetSuite Login' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="87707f99-85a9-4128-8dbd-44432b030406" CvElementArea="278, 649, 356, 55" CvTextArea="429, 670, 88, 13" CvTextArgument="Iniciar sesion" CvType="Button" DesignTimeRectangle="431, 667, 85, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='login-submit' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='login-submit' tag='SPAN' type='' class='' aaname='Iniciar sesión' check:innerText='Iniciar sesión' /&gt;" Guid="f1137358-b36b-4331-a8f0-8ceb7b35d774" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Continuar'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0e5d326f-2a6d-46fb-b187-c35d9375820f" Timeout="1" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://5845631.app.netsuite.com/app/login/oauth2/authorize.nl?redirect_uri=https%3A%2F%2Fcloud.uipath.com%2Fprovisioning_%2Fcallback&amp;client_id=7541956c3922f3340f4c0a9f5fa0706bca0b5b2a3dccb93cb85bb294df9556e1&amp;response_type=code&amp;scope=restlets+rest_webservices&amp;state=cmVkaXJlY3RVcmw9aHR0cHM6Ly9jbG91ZC51aXBhdGguY29tL3NlcnZpd3JnZWxoYy9kZWZhdWx0dGVuYW50L3Byb3Zpc2lvbmluZ18vY2FsbGJhY2ssaWQ9ZGQ4MGE4YjctNWFmOC00MGNiLWIyOTUtNjhlNDJhOWMxYzQyLGVsZW1lbnRLZXk9ZGVzaWduLWRlc2lnbi1yZXN0bnMsZGVjb2RlQ29kZT1mYWxzZSxsYW5nPQ&amp;prompt=&amp;s=r&amp;nonce&amp;whence=" CVScreenId="faeb810c-3498-4025-97a5-49ff11bc4377" CvElementArea="631, 586, 118, 43" CvTextArea="658, 601, 65, 13" CvTextArgument="Continuar" CvType="Button" DesignTimeRectangle="633, 588, 115, 39" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='allow-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='allow-button' tag='BUTTON' type='' class='allow-button btn primary-btn' aaname=' Continuar&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Continuar' /&gt;" Guid="56595f72-e44c-426c-b40e-0458724525db" InformativeScreenshot="5b8c453c866e7180d59d4a7c6a8ca638.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='La aplicación solicita permiso para acceder a su cuenta SERVIMETERS S.A.S.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="faeb810c-3498-4025-97a5-49ff11bc4377" CvTextArea="521, 325, 558, 20" CvTextArgument="Robot facturacion tiene acceso a SERVIMETERS S.A.S" CvType="Text" DesignTimeRectangle="522, 323, 912, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='wrapper' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='wrapper' tag='H1' type='' class='consent-header-main' aaname=' Robot facturación tiene acceso a SERVIMETERS S.A.S&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' check:innerText='Robot facturación tiene acceso a SERVIMETERS S.A.S' /&gt;" Guid="fa8ec0ff-d2f7-4606-b48b-b35a05fb7ab1" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="420,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="si:IOException">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                          </ActivityAction.Argument>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                  <uix:NGetUrl CurrentUrl="[modified_url_token]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="454,119" sap2010:WorkflowViewState.IdRef="NGetUrl_3" Version="V3" />
+                  <Assign sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_8">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[code_st2_token]</OutArgument>
                     </Assign.To>
@@ -415,7 +441,7 @@
                       <InArgument x:TypeArguments="x:String">[modified_url_token.Substring(modified_url_token.IndexOf("code") + 5)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/x-www-form-urlencoded" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://5845631.suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" sap:VirtualizedContainerService.HintSize="450,102" sap2010:WorkflowViewState.IdRef="HttpClient_8" Method="POST" Result="[response_api_token]" StatusCode="[status_code]">
+                  <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/x-www-form-urlencoded" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://5845631.suitetalk.api.netsuite.com/services/rest/auth/oauth2/v1/token" sap:VirtualizedContainerService.HintSize="454,102" sap2010:WorkflowViewState.IdRef="HttpClient_8" Method="POST" Result="[response_api_token]" StatusCode="[status_code]">
                     <ui:HttpClient.Attachments>
                       <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                     </ui:HttpClient.Attachments>
@@ -436,7 +462,7 @@
                       <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                     </ui:HttpClient.UrlSegments>
                   </ui:HttpClient>
-                  <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="450,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_4" JsonObject="[data_auth]" JsonString="[response_api_token]" />
+                  <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="454,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_4" JsonObject="[data_auth]" JsonString="[response_api_token]" />
                   <Assign sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_9">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[token_api_ns]</OutArgument>
